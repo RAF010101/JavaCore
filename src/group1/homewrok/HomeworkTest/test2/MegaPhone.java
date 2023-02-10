@@ -1,16 +1,20 @@
 package group1.homewrok.HomeworkTest.test2;
 
+import java.util.Scanner;
+
 public class MegaPhone {
     public static void main(String[] args) {
-        int replenish = 0;
+        MegaPhone1 phone = new MegaPhone1();
+        Scanner scanner =new Scanner(System.in);
         int operator = 0;
         int unknown = 100;
-        replenish = 1200;
-        if (replenish >= 1000) {
-            for (int i = 0; i < replenish / 100; i++) {
+        System.out.println("Please input replenish price");
+        phone.replenish = scanner.nextLine();
+        if (Integer.parseInt(phone.replenish)>= 1000) {
+            for (int i = 0; i < Integer.parseInt(phone.replenish)/ 100; i++) {
                 operator++;
             }
-            unknown = operator + replenish;
+            unknown = operator +Integer.parseInt(phone.replenish);
         }
         System.out.println(unknown);
     }
