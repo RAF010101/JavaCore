@@ -1,6 +1,5 @@
 package group1.homewrok.homework9;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class EmployeeDemo {
